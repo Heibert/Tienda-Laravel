@@ -32,13 +32,13 @@ $Estudiantes["CR"]="Cristian";
 var_dump($Estudiantes);
 echo "<br>"; */
 
-Route::get('Pais',function(){
-    $Paises = [
+Route::get('paises',function(){
+    $paises = [
         "Colombia"=>[
             "Capital"=>"Bogota",
             "Moneda"=>"Peso",
-            "Poblacion"=>"51 Millones",
-            "Ciudades principales"=>[
+            "Poblacion"=>"51 Millones hab.",
+            "Ciudades"=>[
                 "Medellin",
                 "Barranquilla",
                 "Cali"
@@ -46,27 +46,33 @@ Route::get('Pais',function(){
         ],"Peru"=>[
             "Capital"=>"Lima",
             "Moneda"=>"Sol",
-            "Poblacion"=>"32 Millones",
-            "Ciudades principales"=>[
+            "Poblacion"=>"32 Millones hab.",
+            "Ciudades"=>[
                 "Trujillo",
                 "Arequipa"
             ]
         ],"Paraguay"=>[
             "Capital"=>"Asuncion",
             "Moneda"=>"Guarany",
-            "Poblacion"=>"7 Millones",
-            "Ciudades principales"=>[
+            "Poblacion"=>"7 Millones hab.",
+            "Ciudades"=>[
                 "Luque"
                 ]
         ],"Chile"=>[
             "Capital"=>"Santiago de Chile",
             "Moneda"=>"Peso",
-            "Poblacion"=>"19 Millones"
+            "Poblacion"=>"19 Millones hab.",
+            "Ciudades"=>[
+                "Santiago de Chile"
+                ]
         ],"Panama"=>[
             "Capital"=>"Ciudad de Panama",
             "Moneda"=>"Balboa",
-            "Poblacion"=>"4 Millonessss"
+            "Poblacion"=>"4 Millones hab.",
+            "Ciudades"=>[
+                "Ciudad de panama"
+                ]
         ]
     ];
-    return view('Paises')->with("Paises",$Paises);
+    return view('paises')->with("paises",$paises);
 });
