@@ -33,19 +33,24 @@
         <tbody>
             @foreach($paises as $Pais => $infoPais)
             <tr>
-                <td>
+                <th rowspan='{{count($infoPais["Ciudades"])}}'>
                     {{$Pais}}
-                </td>
-                <td>
+                </th>
+                <td rowspan='{{count($infoPais["Ciudades"])}}'>
                     {{$infoPais["Capital"]}}
                 </td>
-                <td>
+                <td rowspan='{{count($infoPais["Ciudades"])}}'>
                     {{$infoPais["Moneda"]}}
                 </td>
-                <td>
+                <td rowspan='{{count($infoPais["Ciudades"])}}'>
                     {{$infoPais["Poblacion"]}}
                 </td>
+                @foreach($infoPais["Ciudades"] as $ciudad)
+                <th>
+                    {{$ciudad}}
+                </th>
             </tr>
+                @endforeach
             @endforeach
         </tbody>
         <tfoot></tfoot>
