@@ -32,8 +32,8 @@ $Estudiantes["CR"]="Cristian";
 var_dump($Estudiantes);
 echo "<br>"; */
 
-Route::get('Pais',function(){
-    $Paises = [
+Route::get('paises',function(){
+    $paises = [
         "Colombia"=>[
             "Capital"=>"Bogota",
             "Moneda"=>"Peso",
@@ -68,5 +68,5 @@ Route::get('Pais',function(){
             "Poblacion"=>"4 Millonessss"
         ]
     ];
-    return view('Paises')->with("Paises",$Paises);
+    return view('paises')->with("paises",$paises);
 });
