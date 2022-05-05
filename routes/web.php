@@ -65,7 +65,7 @@ Route::get('Pais',function(){
         ],"Panama"=>[
             "Capital"=>"Ciudad de Panama",
             "Moneda"=>"Balboa",
-            "Poblacion"=>"4 Millones"
+            "Poblacion"=>"4 Millonessss"
         ]
     ];
     return view('Paises')->with("Paises",$Paises);
