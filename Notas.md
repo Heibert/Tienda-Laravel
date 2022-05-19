@@ -13,4 +13,5 @@
 - En la consola **composer --version**
 ### 6. Revisa las credenciales del equipo
 - Abre el *Administrador de credenciales* y revisa si es tu cuenta.
-> En caso de no serlo borrala,
+> En caso de no serlo **borrala**
+# <p align="center">Descarga tu proyecto</p>
