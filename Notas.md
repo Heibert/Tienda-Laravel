@@ -16,13 +16,13 @@
 > En caso de no serlo **borrala**
 # <p align="center">Descarga tu proyecto</p>
 ### 1. Ingresa a tu directorio
-- En la consola escribe **cd** *Tu directorio* y deberias quedar ubicado en el
+- En la consola escribe **cd** ***Tu directorio*** y deberias quedar ubicado en el
 > Por ejemplo *cd C:\Users\APRENDIZ\Documents\Heibert*
 ### 2. Clona tu proyecto
 - En la consola escribe **git clone** *Tu directorio de GitHub*
 > Por ejemplo **git clone https://github.com/Heibert/PHP2465903.git**
 ### 3. Ingresa a tu carpeta
-- En la consola excribe **cd** *Tu carpeta clonada*
+- En la consola excribe **cd** ***Tu carpeta clonada***
 > Por ejemplo **cd PHP2465903** *Si no recuerdas el nombre de la carpeta puedes usar **dir** para que la consola te muestre el contenido de la carpeta en la que te ubicas*
 ### 4. Descarga la rama que uses
 - En la consola escribe **git pull origin** ***Tu rama*** 
