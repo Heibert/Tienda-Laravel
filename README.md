@@ -2,7 +2,7 @@
 - [Configuracion de entorno](#configuracion-de-entorno)
 - [Descarga tu proyecto](#descarga-tu-proyecto)
 - [Configura el proyecto](#configura-tu-proyecto)
-- [Sube a GitHub](#guarda-en-github)
+- [Guardar en GitHub](#guarda-en-github)
 # <p align="center">Configuracion de entorno</p>
 ### 1. Borra tu proyecto local
 ### 2. Verificación de PHP 

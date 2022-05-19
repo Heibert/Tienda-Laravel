@@ -31,7 +31,7 @@
                 <select name="" id="marca">
                     @foreach($marcas as $marca)
                         <option value="">
-                            {{$marca -> nombre}}
+                            {{$marca->nombre}}
                         </option>
                     @endforeach
                 </select>
