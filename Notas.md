@@ -20,5 +20,13 @@
 > Por ejemplo *cd C:\Users\APRENDIZ\Documents\Heibert*
 ### 2. Clona tu proyecto
 En la consola escribe **git clone** *Tu directorio de GitHub*
-> Por ejemplo **git clone** *https://github.com/Heibert/PHP2465903.git*
+> Por ejemplo **git clone https://github.com/Heibert/PHP2465903.git**
 ### 3. Ingresa a tu carpeta
+En la consola **cd** *Tu carpeta clonada*
+> Por ejemplo **cd PHP2465903** *Si no recuerdas el nombre de la carpeta puedes usar **dir** para que la consola te muestre el contenido de la carpeta en la que te ubicas*
+### 4. Descarga la rama que uses
+En la consola **git pull origin** ***Tu rama*** 
+>Un ejemplo seria **git pull origin evidencia_01** con **git remote -v** te muestra tus ramas
+### 5. Instala composer
+- En la consola escribe **composer install**
+> Si te sale un error podria ser culpa del internet, vuelve a intentarlo
