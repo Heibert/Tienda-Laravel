@@ -2,6 +2,7 @@
 - [Configuracion de entorno](#configuracion-de-entorno)
 - [Descarga tu proyecto](#descarga-tu-proyecto)
 - [Configura el proyecto](#configura-tu-proyecto)
+- [Sube a GitHub](#guarda-en-github)
 # <p align="center">Configuracion de entorno</p>
 ### 1. Borra tu proyecto local
 ### 2. Verificación de PHP 
@@ -61,3 +62,6 @@ En la consola **git add .**
 ### 2. Guarda de forma local tus cambios
 En la consola **git commit -m** ***Un mensaje***
 >Un ejemplo **git commit -m rutas**
+### 3. Subir los cambios
+En la consola **git push origin** ***Rama a la que lo subiras***
+>Un ejemplo **git push origin master**
