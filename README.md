@@ -1,4 +1,6 @@
-# <p align="center" color> Configuracion de entorno</p>
+# Index
+[Config](#configuracion-de-entorno)
+## <p align="center" color> Configuracion de entorno</p>
 ### 1. Borra tu proyecto local
 ### 2. Verificación de PHP 
 En la consola escribe **php -v**
@@ -14,7 +16,7 @@ En la consola escribe **composer --version**
 ### 6. Revisa las credenciales del equipo
 Abre el *Administrador de credenciales* y revisa si es tu cuenta.
 > En caso de no serlo **borrala**
-# <p align="center">Descarga tu proyecto</p>
+## <p align="center">Descarga tu proyecto</p>
 ### 1. Ingresa a tu directorio
 En la consola escribe **cd** ***Tu directorio*** y deberias quedar ubicado en el
 > Por ejemplo *cd C:\Users\APRENDIZ\Documents\Heibert*
@@ -32,7 +34,7 @@ En la consola escribe **composer install**
 > Si te sale un error podria ser culpa del internet, vuelve a intentarlo
 ### 6. Abre Visual Studio
 En la consola escribe **code .** y deberia abrirse en tu carpeta
-# <p align="center">Configura tu proyecto</p>
+## <p align="center">Configura tu proyecto</p>
 ### 1. Crea tu archivo de configuracion .env
 Copia el archivo **.env.example** y pegalo en tu mismo proyecto
 Cambiale el nombre a la copia y nombralo como **.env**
