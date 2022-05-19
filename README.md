@@ -18,7 +18,7 @@ Abre XAMPP y enciende MYSQL
 En la consola escribe **composer --version**
 ### 6. Revisa las credenciales del equipo
 Abre el *Administrador de credenciales* y revisa si es tu cuenta.
-> En caso de no serlo **borrala**
+> En caso de no serlo **ELIMINALA**
 # <p align="center">Descarga tu proyecto</p>
 ### 1. Ingresa a tu directorio
 En la consola escribe **cd** ***Tu directorio*** y deberias quedar ubicado en el
