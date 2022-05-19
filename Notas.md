@@ -1,11 +1,11 @@
 # <p align="center" color> Configuracion de entorno</p>
-#### 1. Borra tu proyecto
-#### 2. Verificacion de PHP 
-- php -v *(En consola)*
+### 1. Borra tu proyecto
+### 2. Verificacion de PHP 
+- **php -v** *(En consola)*
 > Si el resultado es **8.0** o mayor todo es correcto, en caso de no serlo reinstala XAMPP
-#### 3. Verifica tu version de GitHub
+### 3. Verifica tu version de GitHub
 - En la consola escribe **git --version** 
 > Tu version deberia ser superior a **2.2**
-#### 4. Verificar MYSQL
+### 4. Verificar MYSQL
 - Abre XAMPP y enciende MYSQL 
-> En caso de error ve a *config/my.ini* y cambia sus *port=XXXX*
+> En caso de error ve a **config/my.ini** y cambia sus **port=XXXX**
