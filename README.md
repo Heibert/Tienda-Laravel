@@ -31,10 +31,13 @@ En la consola excribe **cd** ***Tu carpeta clonada***
 ### 4. Descarga la rama que uses
 En la consola escribe **git pull origin** ***Tu rama*** 
 >Un ejemplo seria **git pull origin evidencia_01** con **git remote -v** te muestra tus ramas
-### 5. Instala composer
+### 5. Selecciona la rama que usaras
+En la consola **git checkout** ***Tu rama***
+>Un ejemplo seria **git checkout evidencia_01**
+### 6. Instala composer
 En la consola escribe **composer install**
 > Si te sale un error podria ser culpa del internet, vuelve a intentarlo
-### 6. Abre Visual Studio
+### 7. Abre Visual Studio
 En la consola escribe **code .** y deberia abrirse en tu carpeta
 # <p align="center">Configura tu proyecto</p>
 ### 1. Crea tu archivo de configuracion .env
@@ -47,3 +50,14 @@ Abre una consola en VS y en ella escribe **php artisan key:generate**
 ### 3. Migra tus BD
 En la consola escribe **php artisan migrate**
 > En caso de error revisa el tipo de BD que tienes en el .env
+### 4. Llena tus BD
+En la cosola escribe **php artisan db:seed**
+### 5. Ejecuta el servidor
+En la consola escribe **php artisan serve**
+>Te deberia dar una direccion la cual al clickearla te abre tu pagina
+# Guarda en GitHub
+### 1. Confirma los cambios
+En la consola **git add .**
+### 2. Guarda de forma local tus cambios
+En la consola **git commit -m** ***Un mensaje***
+>Un ejemplo **git commit -m rutas**
