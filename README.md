@@ -1,8 +1,8 @@
 # Indice
 - [Configuracion de entorno](#configuracion-de-entorno)
 - [Descarga tu proyecto](#descarga-tu-proyecto)
-- [Configura el proyecto](#p-align"center"configura-tu-proyecto)
-# <p align="center" color>Configuracion de entorno</p>
+- [Configura el proyecto](#configura-tu-proyecto)
+# <p align="center">Configuracion de entorno</p>
 ### 1. Borra tu proyecto local
 ### 2. Verificación de PHP 
 En la consola escribe **php -v**
