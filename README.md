@@ -1,5 +1,5 @@
 # Index
-[Config](#configuracion-de-entorno)
+[Config](#-configuracion-de-entorno)
 ## <p align="center" color> Configuracion de entorno</p>
 ### 1. Borra tu proyecto local
 ### 2. Verificación de PHP 
