@@ -30,3 +30,5 @@ En la consola **git pull origin** ***Tu rama***
 ### 5. Instala composer
 - En la consola escribe **composer install**
 > Si te sale un error podria ser culpa del internet, vuelve a intentarlo
+### 6. Abre Visual Studio
+- En la consola escribe **code .** y deberia abrirse en tu carpeta
