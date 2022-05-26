@@ -17,8 +17,8 @@ Abre XAMPP y enciende MYSQL
 ### 5. Verifica tu version de Composer
 En la consola escribe **composer --version**
 ### 6. Revisa las credenciales del equipo
-Abre el *Administrador de credenciales* y revisa si es tu cuenta.
-> En caso de no serlo **ELIMINALA**
+Abre el *Administrador de credenciales* y revisa si tu cuenta de GitHub esta abierta.
+> En caso de no estar otra **ELIMINALA**
 # <p align="center">Descarga tu proyecto</p>
 ### 1. Ingresa a tu directorio
 En la consola escribe **cd** ***Tu directorio*** y deberias quedar ubicado en el
@@ -31,10 +31,10 @@ En la consola excribe **cd** ***Tu carpeta clonada***
 > Por ejemplo **cd PHP2465903** *Si no recuerdas el nombre de la carpeta puedes usar **dir** para que la consola te muestre el contenido de la carpeta en la que te ubicas*
 ### 4. Descarga la rama que uses
 En la consola escribe **git pull origin** ***Tu rama*** 
->Un ejemplo seria **git pull origin evidencia_01** con **git remote -v** te muestra tus ramas
+>Un ejemplo seria **git pull origin evidencia_01** con **git pull origin -v** te muestra tus ramas
 ### 5. Selecciona la rama que usaras
 En la consola **git checkout** ***Tu rama***
->Un ejemplo seria **git checkout evidencia_01**
+>Un ejemplo seria **git checkout master**
 ### 6. Instala composer
 En la consola escribe **composer install**
 > Si te sale un error podria ser culpa del internet, vuelve a intentarlo
@@ -42,9 +42,10 @@ En la consola escribe **composer install**
 En la consola escribe **code .** y deberia abrirse en tu carpeta
 # <p align="center">Configura tu proyecto</p>
 ### 1. Crea tu archivo de configuracion .env
-Copia el archivo **.env.example** y pegalo en tu mismo proyecto
-Cambiale el nombre a la copia y nombralo como **.env**
-> En la linea 11 a 16 del archivo .env se configura tu BD
+Copia el archivo **.env.example** y pegalo en tu mismo proyecto cambiale el nombre a la copia y nombralo como **.env**
+### 2. Configura tu .env
+En la linea 11 estableces que tipo de BD usas y en la 14 el nombre o ruta de la BD
+> En la linea 11 a 16 del archivo .env estan las configuraciones de tu BD
 ### 2. Crear una KEY en artisan
 Abre una consola en VS y en ella escribe **php artisan key:generate**
 > No funcionara si no instalaste correctamente el *composer*

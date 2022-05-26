@@ -4,16 +4,17 @@
     <h1 class="#f57c00 orange-text darken-2">Nuevo Producto</h1>
 </div>
 <div class="row">
-    <form class="col s12">
+    <form method="POST" action="{{route('productos.store')}}" class="col s12" @csrf>
         <div class="row">
             <div class="imput-field col s8">
                 <label for="nombre">Nombre</label>
                 <input placeholder="Nombre del producto" type="text" id="nombre" name="nombre">
             </div>
+        </div>
         <div class="row">
             <div class="input-field col s8">
-            <label for="desc">Descripcion</label>
-                <textarea  placeholder="Descripcion del producto" type="text" name="desc" id="desc" class="materialize-textarea">
+                <label for="desc">Descripcion</label>
+                <input placeholder="Descripcion del producto" type="text" name="desc" id="desc">
                 </textarea>
             </div>
         </div>
@@ -27,11 +28,25 @@
             <div class="col s8 input-field">
                 <label for="marca">
                 Elija una marca
-                </label>
-                <select name="" id="marca">
+                </label><br>
+                <select name="marca" id="marca">
                     @foreach($marcas as $marca)
                         <option value="">
                             {{$marca->nombre}}
+                        </option>
+                    @endforeach
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s8 input-field">
+                <label for="categoria">
+                Elija una categoria
+                </label><br>
+                <select name="categoria" id="categoria">
+                    @foreach($categorias as $categoria)
+                        <option value="">
+                            {{$categoria->nombre}}
                         </option>
                     @endforeach
                 </select>

@@ -31,7 +31,7 @@ class ProductoController extends Controller
         //Seleccion de categorias
         $categorias = Categoria::all();
         //Mostrar la vista
-        return view('productos.new')
+        return view('productos.registro')
                 ->with('marcas',$marcas)
                 ->with('categorias',$categorias);
     }
@@ -44,7 +44,7 @@ class ProductoController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        
     }
 
     /**
