@@ -27,7 +27,7 @@ En la consola escribe **cd** ***Tu directorio*** y deberias quedar ubicado en el
 En la consola escribe **git clone** ***Tu directorio de GitHub***
 > Por ejemplo **git clone https://github.com/Heibert/PHP2465903.git**
 ### 3. Ingresa a tu carpeta
-En la consola excribe **cd** ***Tu carpeta clonada***
+En la consola escribe **cd** ***Tu carpeta clonada***
 > Por ejemplo **cd PHP2465903** *Si no recuerdas el nombre de la carpeta puedes usar **dir** para que la consola te muestre el contenido de la carpeta en la que te ubicas*
 ### 4. Descarga la rama que uses
 En la consola escribe **git pull origin** ***Tu rama*** 
@@ -56,7 +56,7 @@ En la consola escribe **php artisan migrate**
 En la cosola escribe **php artisan db:seed**
 ### 5. Ejecuta el servidor
 En la consola escribe **php artisan serve**
->Te deberia dar una direccion la cual al clickearla te abre tu pagina
+>Te deberia dar una direccion la cual al clickearla te abre tu pagina por ejemplo *http://127.0.0.1:8000*
 # Guarda en GitHub
 ### 1. Confirma los cambios
 En la consola **git add .**

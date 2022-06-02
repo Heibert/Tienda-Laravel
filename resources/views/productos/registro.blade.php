@@ -9,7 +9,8 @@
     <h1 class="#f57c00 orange-text darken-2">Nuevo Producto</h1>
 </div>
 <div class="row">
-    <form method="POST" action="{{route('productos.store')}}" class="col s12" >
+    <form method="POST" action="{{route('productos.store')}}" class="col s12" 
+    enctype="multipart/form-data">
     @csrf
         <div class="row">
             <div class="input-field col s8">
@@ -71,15 +72,15 @@
                     <input type="file" name="imagen">
                 </div>
             </div>
+            <span class="red-text col s8">{{$errors->first('imagen')}}</span>
         </div>
         <div class="row">
-            <button class="btn waves-effect #f57c00 orange darken-2" type="submit">
-                <div class="material-icons right">
-                    Guardar
-                </div>
-            </button>
+            <div class="file-field input-field col s8">
+                <button class="btn waves-effect #f57c00 orange darken-2" type="submit">
+                        Guardar
+                </button>
+            </div>
         </div>
     </form>
-
 </div>
 @endsection 

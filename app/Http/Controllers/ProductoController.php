@@ -45,23 +45,20 @@ class ProductoController extends Controller
      */
     public function store(Request $r)
     {
-        //Recibir datos
-/*         echo "<pre>";
-        var_dump($r->all());
-        echo "</pre>"; */
-
         //Reglas de validacion de campos
         $reglas = [
             "nombre"=>'required|alpha',
             "desc"=>'',
             "precio"=>'numeric|required',
             "marca"=>'required|numeric',
-            "categoria"=>'required|numeric'
+            "categoria"=>'required|numeric',
+            "imagen"=>'required|image'
         ];
         $mensajes = [
             "required" => "El campo es obligatorio",
             "alpha" => "Solo letras",
-            "numeric" => "Solo puede contener numeros"
+            "numeric" => "Solo puede contener numeros",
+            "image" => 'Solo se aceptan "jpg, jpeg, png, bmp, gif, svg y webp"'
         ];
         //Crear objeto de validacion
         $validation = Validator::make($r->all(),$reglas,$mensajes);
@@ -72,6 +69,14 @@ class ProductoController extends Controller
             ->withInput();
         }
         else{
+        //acceder a propiedades del archivo
+        $archivo = $r->imagen;
+        $nombre_archivo = $archivo->getClientOriginalName();
+        //establecer la ubicacion de almacenamiento
+        $ruta=(public_path()."/img");
+        //mover el archivo
+        $archivo->move($ruta,$nombre_archivo);
+
         //Crear nuevo producto<<entity>>
         $p =new Producto;
         //Asignar valores a los atributos
@@ -80,6 +85,7 @@ class ProductoController extends Controller
         $p->precio = $r->precio;
         $p->marca_id = $r->marca;
         $p->categoria_id = $r->categoria;
+        $p->imagen = $nombre_archivo;
         //Guardar en la bd
         $p->save();
         return redirect('productos/create')
