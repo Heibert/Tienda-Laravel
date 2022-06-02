@@ -38,7 +38,7 @@
                 <label for="marca">
                 Marca
                 </label><br>
-                <select name="marca" id="marca">
+                <select name="marca" id="marca" value="{{old('nombre')}}">
                 <option value="">Elija una marca</option>
                     @foreach($marcas as $marca)
                         <option value="{{ $marca->id}}">

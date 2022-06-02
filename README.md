@@ -62,7 +62,7 @@ En la consola escribe **php artisan serve**
 En la consola **git add .**
 ### 2. Guarda de forma local tus cambios
 En la consola **git commit -m** ***Un mensaje***
->Un ejemplo **git commit -m rutas**
+>Un ejemplo **git commit -m rutas** si deseas crear una rama usa **git checkout -b** ***+ nombre de la rama*** ejemplo **git checkout -b evidencia_03**
 ### 3. Subir los cambios
 En la consola **git push origin** ***Rama a la que lo subiras***
->Un ejemplo **git push origin master** en caso de querer subirlo a otro repositorio usa **git remote -v** te mostrara a que git esta conectado, si quieres usar otro escribre ****
+>Un ejemplo **git push origin master**
