@@ -1,6 +1,6 @@
 @extends('layouts.menu')
 @section('contenido')
-@if(session('mensaje'))
+@if(session('comm'))
 <div class="green-text">
     <span><h4>{{session('mensaje')}}</h4></span>
 </div>
