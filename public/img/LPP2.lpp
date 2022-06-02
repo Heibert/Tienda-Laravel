@@ -1,0 +1,25 @@
+entero i,1m
+real v1,v2,v3,sb,pt,av
+inicio
+escriba "digite la cantidad de vendedores"
+llamar nueva_linea
+lea 1m
+llamar nueva_linea
+para i<- 1 hasta 1m haga
+llamar nueva_linea
+escriba "digite sus ventas"
+lea v1,v2,v3
+llamar nueva_linea
+av<- (v1+v2+v3)*0.10
+escriba "digite su sueldo base"
+lea sb
+llamar nueva_linea
+pt<- sb+av
+escriba "333333333333333"
+llamar nueva_linea
+escriba "el sueldo total es= " ,pt
+llamar nueva_linea
+escriba " 333333333333"
+llamar nueva_linea
+fin para
+fin

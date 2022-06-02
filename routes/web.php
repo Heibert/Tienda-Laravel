@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ProductoController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,21 +17,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-
-/* Ruta de arreglos */
-/* $Estudiantes =["CA" => "Carlos","J" => "Jose","A" => "Ana"];
-Route::get('arreglo' , function(){
-     echo "<pre>";
-    var_dump($Estudiantes);
-    echo "</pre>";  
-    foreach ($Estudiantes as $I) {
-        echo $I."<hr />";
-    }
-});
-// Agregar elementos 
-$Estudiantes["CR"]="Cristian";
-var_dump($Estudiantes);
-echo "<br>"; */
 
 Route::get('paises',function(){
     $paises = [
@@ -76,3 +62,12 @@ Route::get('paises',function(){
     ];
     return view('paises')->with("paises",$paises);
 });
+// Codigo de Ronald
+Route::get('prueba', function(){
+    return view('layouts.menu');
+});
+Route::get('prueba', function(){
+    return view('productos.new');
+});
+//rutas rest - resource
+Route::resource('productos', ProductoController::class);
