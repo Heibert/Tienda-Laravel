@@ -22,7 +22,7 @@
         <div class="row">
             <div class="input-field col s8">
                 <label for="desc">Descripcion</label>
-                <textarea class="input-field" placeholder="Descripcion del producto" name="desc" id="desc">{{old('desc')}}</textarea>
+                <textarea class="input-field" style="border-bottom: solid 1px grey;" placeholder="Descripcion del producto" name="desc" id="desc">{{old('desc')}}</textarea>
                 <span class="red-text">{{$errors->first('desc')}}</span>
             </div>
         </div>
@@ -66,13 +66,14 @@
             </div>
         </div>
         <div class="row">
-            <div class="file-field input-field col s8">
+            <div class="file-field input-field col s6">
                 <div class="btn #f57c00 orange darken-2">
                     <span>Imagen de producto</span>
                     <input type="file" name="imagen">
                 </div>
+                <span class="red-text col s12" style="margin-top: 8px">{{$errors->first('imagen')}}</span>
+                <input type="text" class="col s6 file-path green-text" readonlyfind>
             </div>
-            <span class="red-text col s8">{{$errors->first('imagen')}}</span>
         </div>
         <div class="row">
             <div class="file-field input-field col s8">
