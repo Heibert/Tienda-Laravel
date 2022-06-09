@@ -13,7 +13,7 @@ class CartController extends Controller
      */
     public function index()
     {
-        //
+        return view('carrito.index');
     }
 
     /**
@@ -34,9 +34,10 @@ class CartController extends Controller
      */
     public function store(Request $request)
     {
-        echo "<pre>";
-        var_dump($request->all());
-        echo "</pre>";
+        $producto = [[
+            "id"=>$request->producto_id,"nombre"=>$request->producto_nombre, "cantidad"=>$request->cantidad
+            ]];
+        session(['cart'=>$producto]);
     }
 
     /**
@@ -81,6 +82,7 @@ class CartController extends Controller
      */
     public function destroy($id)
     {
-        //
+        session()->forget('cart');
+        
     }
 }
