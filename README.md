@@ -74,7 +74,7 @@ En la consola escribe **php artisan make:controller** ***Nombre del controlador*
 En la consola escribe **php artisan make:migration** ***Nombre de la migracion***
 ### Creacion de seeders
 En la consola escribe **php artisan make:seeder** ***Nombre del seeder***
->A la hora de ejecutarlo recomiendo hacerlo de forma individual mediante `php artisan db:seed --class=***TuSeeder***`
+>A la hora de ejecutarlo recomiendo hacerlo de forma individual mediante `php artisan db:seed --class=TuSeeder`
 ## Eloquent -> Models
 ### Abrir la consola de Tinker
 En la consola de vs escribe **php artisan tinker**
